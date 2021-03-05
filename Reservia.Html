@@ -18,22 +18,22 @@
             <nav >
                 <ul id="menu">
                     <img id="logo" src="images\logo\Reservia.svg"/>
-                    <li><a class="onglet" href="#hébergements">Hebergements</a></li>
-                    <li><a class="onglet" href="#Activités">Activités</a></li>
-                    <li><a class="onglet" id="inscription" href="">S'inscrire</a></li>
+                    <li><a class="tab" href="#hébergements">Hebergements</a></li>
+                    <li><a class="tab" href="#Activités">activities</a></li>
+                    <li><a class="tab" id="inscription" href="">S'inscrire</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!--Section 1 Formulaire de recherche-->
+        <!--Section 1 form search-->
         <section class="intro"><h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             En plein centre ville ou en pleine nature <br/>
             
-            <!-- formulaire de recherche-->
-            <section class="formulaire">
+            <!-- form search-->
+            <section class="form">
                 <form  method="post" action="">
                     <p id="local">
-                    <label id="localiser" for="localiser"><i class="fas fa-map-marker-alt"></i></label>
+                    <label id="locate" for="locate"><i class="fas fa-map-marker-alt"></i></label>
                     <input id="search" type="search" name="Ville" id="Ville" placeholder="Marseille,France" />
                     <input id="input" type="submit" value="Rechercher">
                     </p>
@@ -41,21 +41,21 @@
             </section>
 
             
-            <section class="Ravance">
-                <h2 class="ifiltres">Filtres</h2> 
-                <a href=""><h2 class="filtres"> <span class="icones"><i class="fas fa-money-bill-wave" class="icones"></i></span>Économique</h2></a>
-                <a href=""><h2 class="filtres"> <span class="icones"><i class="fas fa-child" class="icones"></i></span>Familial</h2></a>
-                <a href=""><h2 class="filtres"> <span class="icones"><i class="fas fa-heart" class="icones"></i></span>Romantique</h2></a>
-                <a href=""><h2 class="filtres"> <span class="icones"><i class="fas fa-dog"></span></i>Animaux autorisés</h2></a>
+            <section class="filter-section">
+                <h2 class="filter-title">Filtres</h2> 
+                <a href=""><h2 class="filter-item"> <span class="icones"><i class="fas fa-money-bill-wave" class="icones"></i></span>Économique</h2></a>
+                <a href=""><h2 class="filter-item"> <span class="icones"><i class="fas fa-child" class="icones"></i></span>Familial</h2></a>
+                <a href=""><h2 class="filter-item"> <span class="icones"><i class="fas fa-heart" class="icones"></i></span>Romantique</h2></a>
+                <a href=""><h2 class="filter-item"> <span class="icones"><i class="fas fa-dog"></span></i>Animaux autorisés</h2></a>
             </section> 
 
             <i class="fas fa-info"></i>Plus de 500 logements sont disponible dans cette ville
         </section>
 
-        <!--Section 2 Hébergements-->
+        <!--Section 2 Location-->
     <main class="main">
-        <Section class="Gris1">
-            <h1 class="titre" id="hébergements">Hébergement à Marseille</h1>
+        <section class="grey-1">
+            <h1 class="section-title" id="hébergements">Hébergement à Marseille</h1>
 
             <div class='flex-container'>
                 <a href="" class="flex item-1">
@@ -108,13 +108,13 @@
                 </a>
             </div>
 
-            <br /><a href=""><h1 class="titre">Afficher plus</h1></a>
+            <br /><a href=""><strong class="section-title">Afficher plus</strong></a>
 
         </section>
 
-        <!--section 3 Mis en avant-->
-        <Section class="Gris2">
-                <h1 class="titre">Les plus populaires <i class="fas fa-chart-line"></i></h1>
+        <!--section 3 aside-->
+        <Section class="grey-2">
+                <h1 class="section-title">Les plus populaires <i class="fas fa-chart-line"></i></h1>
 
             <div class='flex-container'>
 
@@ -145,43 +145,58 @@
         </section>
     </main>
 
-        <!--section 4 activité-->
+        <!--section 4 activities-->
         <section>
-            <h1 id="Activités">Activités à Marseille</h1>
+            <h1 class="section-title" id="activities">Activités à Marseille</h1>
+            <div class="flex-column"> 
+                
 
-            
-            <h2>Vieux Port</h2>
+                <a class="large item-10" href="">
+                    <strong class="white-box">Vieux Port</strong>
+                </a>
 
-            
-            <h2>Fort de Pomègues</h2>
+                <a class="medium item-11" href="">
+                    <strong class="white-box">Fort de Pomègues</strong>
+                </a>
 
-            
-            <h2>Île de Frioul</h2>
+                <a class="small item-12" href="">
+                    <strong class="white-box">Île de Frioul</strong>
+                </a>
 
-            
-            <h2>Parc National des Calanques</h2>
+                <a class="large item-13" href=""> 
+                    <strong class="white-box">Parc National des Calanques</strong>
+                </a>
 
-            
-            <h2>Notre-dame-de-la-Garde</h2>
+                <a class="small item-14" href="">
+                    <strong class="white-box">Notre-dame-de-la-Garde</strong>
+                </a>
 
-            
-            <h2>Parc Longchamp</h2>
+                <a class="medium item-15" href="">
+                    <strong class="white-box">Parc Longchamp</strong>
+                </a>
+            </div>
         </section>
 
         <!--Footer-->
-        <footer>
-            <h1>À propos</h1>
-            Fonctionnement du site<br/>
-            Condition générales de vente<br/>
-            Données et confidentialité<br/>
+        <footer class="flex-container">
+            <div class="footer about">
+                <h1>À propos</h1>
+                <a href="">Fonctionnement du site<br/></a>
+                <a href="">Condition générales de vente<br/></a>
+                <a href="">Données et confidentialité<br/></a>
+            </div>
 
-            <h1>Nos hébergements</h1>
-            Charte qualité
-            soummettre votre hôtel
+            <div class="footer about">
+                <h1>Nos hébergements</h1> 
+                <a href="">Charte qualité<br/>
+                <a href="">soummettre votre hôtel<br/>
+            </div>
 
-            <h1>Assistance</h1>
-            Centre d'aide
-            Nous contacter
+            <div class="footer about">
+                <h1 >Assistance</h1>
+                <a href="">Centre d'aide<br/>
+                <a href="">Nous contacter<br/>
+            </div>
         </footer>
     </body>
 </html>
