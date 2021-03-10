@@ -11,6 +11,10 @@ body
     padding: 0rem;
 
 }
+section
+{
+    margin: 2rem auto 2rem 0rem;
+}
 h1
 {
     font-size: 1.5rem;
@@ -25,19 +29,35 @@ footer
     line-height: 2rem;
 }
  /* Header*/
-header li 
+header
 {
-    display: inline-block;
-    padding: 2.70rem 2rem 2rem 0rem;
-    text-align: center;
-    
+    margin-bottom: 0.9;
+}
+ header ul 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: center; 
+}
+section
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+#logo
+{
+    margin-right: auto;
+}
+header ul li
+{
+    padding: 2.70rem 1rem 2rem 1rem;
 }
 header li a,#logo
 {
-    padding-top: 2.60rem;
-    
+    padding-top: 2.60rem; 
 }
-nav ul li
+nav ul div
 {
     float: right;
 }
@@ -47,40 +67,39 @@ nav ul li
     color: #0065FC;
 }
  a
- {
-     text-decoration: none;
-     color: black;
- }
+{
+    text-decoration: none;
+    color: black;
+}
  a:visited
- {
+{
     font-weight: initial;
-     color: initial;
- }
+    color: initial;
+}
 
- nav a:hover
- {
-      border-top: #0065FC 0.2rem solid;
-      color: #0065FC;
- }
-
+ nav ul li:hover
+{
+    border-top: #0065FC 0.2rem solid;
+    color: #0065FC;
+}
  nav ul
- {
-   list-style-type: none;
+{
+    list-style-type: none;
    margin: 0;
    padding: 0;
- }
+}
 
-  /*Section 1+2*/
+/*Section 1 search form*/
 .intro
 {
-    margin-top: 3.5rem;
+    margin: 1.75rem auto 0.9rem auto;
 }
 
 /*form*/
 .form
 {
     display: flex;
-    margin-bottom: 0.8rem;
+    margin: 0rem auto 1.75rem auto;
 }
 #local, #locate, #search, #input, #altinput 
 {
@@ -136,13 +155,17 @@ nav ul li
     opacity: 1;
 }
 
-/*Filtre*/
+/*Filter*/
 .filter-section
 {
     height: 3.33rem;
     display: flex;
     flex-direction: row;
     margin-bottom: 1.66rem;
+}
+.filter-title
+{
+    margin-right: 1rem;
 }
 .filter-section a
 {
@@ -154,67 +177,68 @@ nav ul li
     
 }
 .icones
-  {
-    font-size: 1rem;
-    height: 1rem;
-    width: 1rem;
-    padding: 0.33rem 0.70rem 0.33rem 0.75rem;
+{
+    font-size: 1rem; 
+    padding: 0.70rem 0.70rem 0.70rem 0.75rem;
     margin: 0rem 0.66rem 00rem 0rem;
     border: 0.1rem #DEEBFF solid;
     border-radius: 1.33rem;
     background-color: #DEEBFF;
     color: #0065FC;   
-  }
+}
   section div a h2
-  {
-      display: inline-block;
-  }
-  .filter-title,.filter-item
-  {
-    margin: 0.11rem 0.1rem 2rem 2rem;
-    padding: 0.33rem 0.01rem 0.33rem 0.66rem;
-  }
+{
+    display: inline;
+}
   .filter-item
-  {
-    padding: 0.33rem 1.33rem 0.33rem 0.01rem;
+{
+    margin: 0.2rem 0.5rem 0.2rem 0.5rem;
+    padding-right: 0.60rem;
     border: 0.20rem solid #F2F2F2;
     border-left: none;
-    border-radius: 1.33rem 1.33rem 1.33rem 1.33rem;
-  }
+    border-radius: 2rem;
+}
 .fas
-  {
+{
     font-size: 0.75rem;
     color: #0065FC;
-  }
+}
 .filter-section .fas
-  {
-      font-size: 1.3rem;
-  }
+{
+    font-size: 1.3rem;
+}
 .miss
- {
-     color: #F2F2F2;
- }
+{
+    color: #F2F2F2;
+}
 .fa-info
 {
+    margin: 0.7rem 2rem 2rem 0rem;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem;
     color: #0065FC;
     font-size: 0.8rem;
     background-color: white;
     border: 0.14rem solid #F2F2F2;
-    margin-right: 0.66rem;
-    margin-bottom: 1.33rem;
-    padding: 0.33rem 0.66rem 0.33rem 0.66rem;
-    border-radius: 1.33rem;
+    border-radius: 2rem;
+    position: absolute;
 }
- 
+.note
+{
+    position: relative;
+    margin: 3rem 0rem 3rem 0rem;
+    padding-left: 3rem;
+    width: auto;
+}
+/*section 2 Rent*/
 .grey-1, .grey-2, footer
 {
     background-color: #F2F2F2;
 }
 .section-title
 {
-    margin-left: 0.60rem;
+    margin-left: 1.2rem;
 }
-.main
+.location
 {
     display: flex;
     flex-wrap: nowrap;
@@ -245,7 +269,7 @@ nav ul li
   .grey-1
 {
     min-width: 24rem;
-    margin: 0px 1.90rem 2rem 0.33rem;
+    margin: 0rem auto 0rem 0rem;
     padding: 2rem 1.33rem 2rem 1.33rem;
     border-radius: 1rem 1rem 1rem 1rem;
     max-width: 53.33rem
@@ -253,13 +277,9 @@ nav ul li
 .grey-2
 {
     max-width: 24rem;
-    margin: 0px 1.90rem 2rem 0.33rem;
+    margin:auto;
     padding: 2rem 1.33rem 2rem 1.33rem;
     border-radius: 1rem 1rem 1rem 1rem;
-}
-.grey-2 h1
-{
-    padding: 0rem 1rem 0rem;
 }
 .flex-container
 {
@@ -268,7 +288,6 @@ nav ul li
     flex-wrap: wrap;
     max-width: 90rem;
 }
-
 .flex
 {
     min-width: 15.33rem;
@@ -279,22 +298,20 @@ nav ul li
     background-repeat: no-repeat;
     border: white solid ;
     border-width: 0.20rem 0.20rem 0.40rem 0.20rem;
-    border-radius: 1.33rem 1.33rem 1.33rem 1.33rem; 
-    
+    border-radius: 1.33rem 1.33rem 1.33rem 1.33rem;    
 }
 
 .text
 {
     background: rgba(255, 255, 255, 1);
     border: white solid 0.33rem;
-    border-radius: 00px 0px 1rem 1rem;
-    
+    border-radius: 00px 0px 1rem 1rem; 
 }
 
 .pop
 {
     min-width: 12rem;
-    min-height: 8.66rem;
+    height: 8.5rem;
     padding-left: 8rem;
     margin: 1rem 1rem 1rem 1rem;
     background-size: cover;
@@ -306,14 +323,13 @@ nav ul li
 .right
 {
     max-width: 10.66rem;
-    padding-left: 0.33rem;
-    padding-right: 1rem;
+    padding: 0.8rem 1rem 3.5rem 0.33rem;
     background: rgba(255, 255, 255, 1);
     border: white solid ;
-    border-width: 0.66rem 0px 4.30rem 0.66rem;
+    border-width: 0.20rem 0px 0.20rem 0.20rem;
     border-radius: 00px 1rem 1rem 0px;     
 }
-.flex-column
+.flex-actities
 {
     max-width: 90rem;
     max-height: 35rem;
@@ -329,7 +345,7 @@ nav ul li
     border-radius: 1rem 1rem 1rem 1rem;
     position: relative;
     box-shadow: 0.1rem 0.1rem #F2F2F2;
-    margin: 1.20rem;
+    margin: 1rem;
 }
 .medium
 {
@@ -355,11 +371,10 @@ nav ul li
     border-width: 0.66rem 1.20rem 0.80rem 1.40rem;
     border-radius: 0rem 0rem 1rem 1rem;
 }
-/*assets loction*/
+/*assets location*/
 .item-1
 {
     background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-    
 }
 .item-2
 {
@@ -391,7 +406,7 @@ nav ul li
 {
     background-image: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
     background-size: contain;
-    background-position:  -2rem 0rem
+    background-position:  -2rem 0.1rem
 }
 .item-8
 {
@@ -437,11 +452,14 @@ nav ul li
 /*footer*/
 footer
 {
-    margin: 0rem;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0rem 0rem 0rem 0rem;
 }
 .box
 {
-    margin: 3rem 10rem 3rem 3rem;
+    margin: 3rem auto 3rem 3rem;
 }
 
 /*Media Queries*/
@@ -485,49 +503,58 @@ header div nav ul :nth-child(4)
 header div nav ul :nth-child(1){order: -2}
 #logo
 {
-    padding: 1rem 1rem 1rem 1rem;
+    float: left;
+    margin: 1rem 0rem 1rem 1.86rem;
+    padding: 0rem;
 }
    a:active
 {
     color: #0065FC;
 }
 nav ul li:hover
- {
+{
     border-top: none;
     color: #0065FC;
     border-bottom: #0065FC solid 0.2rem
- }
+}
  nav ul li a:hover
- {
+{
     border: none;
- }
+}
+ nav ul
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 header nav ul li
- {
+{
     min-width: 9rem;
     height: 1.33rem;
-    padding: 0rem 1.4em 0.5rem 1.31rem;
+    padding: 0rem 1.35em 0.5rem 1.35rem;
     border-bottom: solid 0.2rem #F2F2F2;
- }
+}
  header div nav ul li a
- {
+{
     padding-top: 0rem;
- }
+}
 #signup,#signup:hover,#signup:active
 {
+    float: right;
     border: none;
 }
 /*form*/
 .intro
 {
-    margin-top: 0rem;
+margin: 0rem 0rem 0.5rem 1rem;
 }
-.intro h1, .intro span
+.form
 {
-    margin: 1rem 1rem 1rem 1rem;
+    margin-bottom: 0.5rem;
 }
-section
+.note
 {
-    margin: 1rem 0.5rem 0.5rem 0.5rem;
+    margin: 2.5rem 0rem 1.6rem 0rem;
 }
 #altinput
 {
@@ -538,23 +565,14 @@ section
 {
     display: none;
 }
-.filter-title, .filter-item
-{
-    margin: 0;
-    padding: 0rem;
-}
 .filter-title
 {
-    margin-left: 1rem;
-    padding: 0rem 0rem 0rem 0rem;
-    height: 1rem;
-    display: block;
+    width: 24rem;
 }
 .filter-section
 {
     height: auto;
     width: 22.6rem;
-    margin: 0rem;
 }
 .flex-container
 {
@@ -562,25 +580,12 @@ section
     flex-direction:row;
     flex-wrap: wrap;
 }
-.filter-item
-{
-    padding: 0rem 0.5rem 0rem 0rem;
-    margin: 0.5rem 0.5rem 0.5rem 1rem;
-    border-radius: 2rem;
-    
-}
-.icones
-{
-    width: auto;
-    padding: 0.8rem 0.7rem 1rem 0.7rem;
-    margin: 0rem;
-    border-radius: 2rem;
-}
 .fa-child
 {
-    padding: 0.8rem 0.8rem 1rem 1rem;
+    padding: 0.8rem 0.8rem 0.8rem 1rem;
 }
-main
+/*location*/
+.location
 {
     display: flex;
     flex-direction:column-reverse;
@@ -588,18 +593,134 @@ main
 }
 .grey-2
 {
-    margin: 0rem;
     padding: 2rem 0rem 2rem 0rem;
     border-radius: 0rem;
+    margin: 0rem 0rem 2rem 0rem;
 }
 .grey-1
 {
     padding: 0rem;
     background-color: white;
+    margin: 0rem 0rem 2rem 0rem;
+}
+.text
+{
+    width: 19.5rem;
 }
 .flex
 {
-    width: 22.4rem;
+    width: 20rem;
     border-radius: 1rem;
+    box-shadow: 0.1rem 0.4rem #F2F2F2;
+}
+.item-1,.item-2,.item-3
+{
+    background-position: 0rem -2rem;
+    background-size: cover;
+}
+.item-4
+{
+    background-position: 0rem -5rem;
+}
+.item-6
+{
+    background-position: 0rem -11rem;
+}
+.flex-actities
+{
+    max-height: none;
+    display: flex;
+    flex-direction: column;
+}
+.large,.medium
+{
+    height: 11rem;
+    background-position: 0rem 0rem;
+    background-size: cover;
+}
+.item-10
+{
+    background-position: -0rem -1.5rem;
+}
+.item-11
+{
+    background-position: 0rem -10rem;
+}
+.item-12,.item-13
+{
+    background-position: 0rem -1.5rem;
+}
+.item-15
+{
+    background-position: 0rem -2rem;
+}
+.box
+{
+    margin: 1.6rem 5.33rem 1.6rem 1.6rem;
+}
+}
+@media(max-width: 51.2rem)
+{
+html
+{
+    width: 51.2rem;
+    margin: 0rem;
+}
+header,.intro
+{
+    margin-left: 1rem;
+}
+.filter-section
+{
+    height: auto;
+}
+.flex-container
+{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.location
+{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.grey-2
+{
+    max-width: 51.1rem;
+    height: auto;
+    margin: 0rem;
+}
+.grey-2 .flex-container
+{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.grey-1
+{
+    background-color: white;
+}
+.flex
+{
+    margin: 1.33rem auto 0.5rem auto;
+}
+.flex-actities
+{
+    max-height: none;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap-reverse;
+}
+.large,.medium,.small
+{
+    margin: 1rem auto 1rem auto;
+    background-size: cover;
+}
+.large,.small
+{
+    height: 15rem;
 }
 }
