@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Reservia</title>
         <script src="https://kit.fontawesome.com/028f0bb5f4.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta charset="utf-8" />
@@ -8,8 +9,6 @@
         <!--Police Medium 500-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-        
-        <title>Reservia</title>
     </head>
 
     <body>
@@ -19,10 +18,10 @@
             <div id="menu"> 
                 <nav>
                     <ul>
-                        <img id="logo" src="images\logo\Reservia.svg"/>
-                        <li><a href="#hébergements">Hebergements</a></li>
-                        <li><a href="#activities">Activités</a></li>
-                        <li><a id="signup" href="">S'inscrire</a></li>
+                        <li id="logo"><img src="images/logo/Reservia.svg" alt="logo de Reservia"/></li>
+                        <li class="tab"><a href="#hébergements">Hebergements</a></li>
+                        <li class="tab"><a href="#activities">Activités</a></li>
+                        <li class="tab"><a id="signup" href="">S'inscrire</a></li>
                     </ul>
                 </nav>
             </div>
@@ -37,10 +36,10 @@
                 <article class="form">
                     <form  method="post" action="">
                         <p id="local">
-                            <label id="locate" for="locate"><i class="fas fa-map-marker-alt"></i></label>
-                            <input id="search" type="search" name="Ville" id="Ville" placeholder="Marseille,France" />
+                            <label id="locate" for="search"><i class="fas fa-map-marker-alt"></i></label>
+                            <input id="search" type="search" name="Ville" placeholder="Marseille,France" />
                             <input id="input" type="submit" value="Rechercher">
-                            <input id="altinput" type="submit" value="&#xf002"  class="fas fa-search">
+                            <input id="altinput" type="submit" value="&#xf002" class="fas fa-search">
                         </p>
                     </form>
                 </article>
@@ -50,9 +49,9 @@
                         <div class="flex-container">
                             <h2 class="filter-title">Filtres</h2>
                             <a href="" class="filter-item"><i class="icones fas fa-money-bill-wave"></i><h2>Économique</h2></a>
-                            <a href=""class="filter-item"><i class="icones fas fa-child" class="icones"></i><h2>Familial</h2></a>
-                            <a href=""class="filter-item"><i class="icones fas fa-heart" class="icones"></i><h2>Romantique</h2></a>
-                            <a href=""class="filter-item"><i class="icones fas fa-dog"></i><h2>Animaux autorisés</h2></a>
+                            <a href="" class="filter-item"><i class="icones fas fa-child"></i><h2>Familial</h2></a>
+                            <a href="" class="filter-item"><i class="icones fas fa-heart"></i><h2>Romantique</h2></a>
+                            <a href="" class="filter-item"><i class="icones fas fa-dog"></i><h2>Animaux autorisés</h2></a>
                         </div>
                     </div> 
                 </article> 
@@ -83,7 +82,7 @@
                             <a href="" class="flex item-3">
                                 <div class="text">
                                     <strong>Hôtel Les mouettes</strong><br />
-                                    nuit à partir de <span class="price">76€</span></br>       
+                                    nuit à partir de <span class="price">76€</span><br />       
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star miss"></i>
                                 </div>
                             </a>
@@ -91,7 +90,7 @@
                             <a href="" class="flex item-4">
                                 <div class="text">
                                     <strong>Hôtel de la mer</strong><br />
-                                    nuit à partir de <span class="price">46€</span><br/>
+                                    nuit à partir de <span class="price">46€</span><br />
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star miss"></i><i class="fas fa-star miss"></i>
                                 </div>
                             </a>

@@ -9,7 +9,6 @@ body
 {
     margin: 0rem;
     padding: 0rem;
-
 }
 section
 {
@@ -39,27 +38,20 @@ header
     flex-direction: row;
     justify-content: flex-end;
     text-align: center; 
-}
-section
-{
-    margin-left: auto;
-    margin-right: auto;
+    list-style: none;
 }
 #logo
 {
-    margin-right: auto;
+    margin-right:auto;
 }
-header ul li
+.tab
 {
     padding: 2.70rem 1rem 2rem 1rem;
 }
-header li a,#logo
+.tab:hover
 {
-    padding-top: 2.60rem; 
-}
-nav ul div
-{
-    float: right;
+    border-top: #0065FC 0.2rem solid;
+    color: #0065FC;
 }
  #signup
 {
@@ -76,19 +68,6 @@ nav ul div
     font-weight: initial;
     color: initial;
 }
-
- nav ul li:hover
-{
-    border-top: #0065FC 0.2rem solid;
-    color: #0065FC;
-}
- nav ul
-{
-    list-style-type: none;
-   margin: 0;
-   padding: 0;
-}
-
 /*Section 1 search form*/
 .intro
 {
@@ -467,7 +446,8 @@ footer
 /*global*/
 {
 html
-{
+{ 
+    max-width:25rem;
     font-size: 1rem;
     margin: 0;
     padding: 0;
@@ -484,7 +464,7 @@ h2
 /*header*/
 header
 {
-    margin-bottom: 2rem;
+    margin: 0.5rem 0rem 2rem 0rem;
 }
 header div nav ul
 {
@@ -511,7 +491,7 @@ header div nav ul :nth-child(1){order: -2}
 {
     color: #0065FC;
 }
-nav ul li:hover
+tab:hover
 {
     border-top: none;
     color: #0065FC;
@@ -527,7 +507,7 @@ nav ul li:hover
     flex-direction: row;
     flex-wrap: wrap;
 }
-header nav ul li
+.tab
 {
     min-width: 9rem;
     height: 1.33rem;
@@ -659,7 +639,7 @@ margin: 0rem 0rem 0.5rem 1rem;
     margin: 1.6rem 5.33rem 1.6rem 1.6rem;
 }
 }
-@media(max-width: 51.2rem)
+@media(width: 51.2rem)
 {
 html
 {
