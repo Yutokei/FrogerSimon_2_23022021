@@ -9,6 +9,10 @@ body
     margin: 0rem;
     padding: 0rem;
 }
+header
+{
+    margin: 0rem auto 0.4rem 0rem;
+}
 main
 {
     margin: 0.4rem 2rem 3rem 3rem;
@@ -24,7 +28,8 @@ h1
 }
 h2
 {
-    font-size: 1.33rem;
+    font-size: 1.36rem;
+    font-weight: bold;
 }
 h3
 {
@@ -38,10 +43,7 @@ footer
     margin-top: 2.2rem;
 }
  /* Header*/
-header
-{
-    margin: 0rem auto 0.4rem 0rem;
-}
+
  header ul 
 {
     display: flex;
@@ -78,16 +80,16 @@ header
     display: block;
 }
 /*Section 1 search form*/
-.intro
+#intro
 {
     margin: 1.75rem auto 0.9rem auto;
 }
 
 /*form*/
-.field
+#field
 {
     display: flex;
-    margin: 0rem auto 1.75rem auto;
+    margin: 0rem auto 0rem auto;
 }
 #local, #locate-icone, #search, #input, #altinput 
 {
@@ -109,7 +111,7 @@ header
     border:  0.1rem solid #F2F2F2;
     border-radius: 1rem 1rem 1rem 1rem;
 }
-.field .fas
+#field .fas
 {
     font-size: 1.1rem;
     color: black;
@@ -133,9 +135,10 @@ header
 {
     display: none;
     background-color: #0065FC;
-    color: white;
+    color: white !important;
     border: 0.33rem solid #0065FC;
-    border-radius: 0.8rem
+    border-radius: 0.8rem;
+    padding: 0.05rem 0.6rem 0.05rem 0.6rem;
 }
 ::placeholder
 {
@@ -146,7 +149,7 @@ header
 /*Filter*/
 .filter-section
 {
-    margin-bottom: 1.66rem;
+    margin:0rem 0rem 1.66rem 0rem;
 }
 .filter-flexbox
 {
@@ -179,6 +182,10 @@ header
     background-color: #DEEBFF;
     color: #0065FC;   
     text-align:center;
+}
+.fa-child
+{
+    padding: 0.8rem 0.8rem 0.8rem 1rem;
 }
 
 .filter-item h2
@@ -225,7 +232,10 @@ header
 {
     background-color: #F2F2F2;
 }
-
+.location-box:hover,.popular-box:hover,.activities-box:hover
+{
+    transform: scale(1.15);
+}  
 .fa-star,.miss 
 {
     font-size: 0.8rem;
@@ -234,6 +244,12 @@ header
 .miss
 {
     color: #F2F2F2;
+}
+.fa-chart-line
+{
+    float: right;
+    font-size: 1.66rem;
+    color: black;
 }
 .section-title
 {
@@ -247,6 +263,7 @@ header
     flex-flow: row nowrap;
 }
 
+/*article location*/
 .location-article
 {
     width: 56rem;
@@ -272,7 +289,6 @@ header
     transform: scale(1);
     transition: transform 300ms ease-in-out;
 }
-
 .location-photo
 {
     width: 16rem;
@@ -280,22 +296,16 @@ header
     border-radius: 1.5rem 1.5rem 0rem 0rem;
     object-fit: cover;
 }
-
 .location-text
 {
     padding-left: 0.4rem;
 }
 
+/*article popular*/
 .popular-article
 {
     padding: 2rem 2rem 0rem 2rem;
     border-radius: 1rem;
-}
-.fa-chart-line
-{
-    float: right;
-    font-size: 1.66rem;
-    color: black;
 }
 .popular-box
 {
@@ -319,7 +329,7 @@ header
 {
     width: 8.4rem;
     height: 9rem;
-    border-radius: 1.5rem 0rem 0rem 1.5rem;
+    border-radius: 1rem 0rem 0rem 1rem;
     object-fit: cover;
 }
 .popular-text
@@ -331,11 +341,7 @@ header
     line-height: 7rem;
 }
 
-.location-box:hover,.popular-box:hover,.activities-box:hover
-{
-    transform: scale(1.15);
-}  
-
+/*article activities*/
 .activities-flexbox
 {
     height: 34rem;
@@ -364,7 +370,6 @@ header
 {
     padding: 0.5rem 0rem 0rem 1rem;
 }
-
 .medium
 {
     height: 13rem;
@@ -397,6 +402,7 @@ header
 {
     height: 26rem;
 }
+
 /*footer*/
 footer
 {
@@ -404,7 +410,7 @@ footer
     align-items: flex-start;
     flex-wrap: wrap;
 }
-.box
+.footer-box
 {
     margin: 3rem auto 3rem 3rem;
 }
@@ -430,35 +436,41 @@ main
 }
 h1
 {
-    font-size: 1.4rem;
-    font-weight: bold;
+    font-size: 1.45rem;
 }
 h2
 {
     font-size: 1rem;
 }
+.location-box:hover,.popular-box:hover,.activities-box:hover
+{
+    transform: scale(1.05);
+}  
 /*header*/
 header
 {
-    margin: 0.5rem 0rem 2rem 0rem;
+    margin: 0.5rem 0rem 1rem 0rem;
 }
 header div nav ul
 {
     display: flex;
     flex-direction: row ;
     flex-wrap: wrap;
-    padding-left: 0rem;   
+    padding-left: 0rem;
+    text-align: center;   
 }
 header div nav ul :nth-child(4),header div nav ul :nth-child(4):hover
 {
     order: -1; 
     border: none;
-    margin: 1rem 0rem 0.5rem 7.5rem;
+    margin: 2rem 0rem 2rem auto;
     padding: 0rem;
+    text-align: right;
 }
-header div nav ul :nth-child(1)
+#logo
 {
-    order: -2
+    margin: 1rem auto 2rem 1rem;
+    order: -2;
 }
 a:active
 {
@@ -474,23 +486,24 @@ a:active
 {
     min-width: 9rem;
     height: 1.33rem;
-    padding: 0rem 1.36em 0rem 0rem;
+    padding: 0rem 1.36em 0rem 1.36rem;
     border: solid #F2F2F2;
     border-width: 0rem 0rem 0.2rem 0rem;
 }
-#logo
-{
-    margin: 0rem 0rem 0.8rem 0rem;
-    padding-right: 0.5rem;
-}
+
 /*form*/
-.intro
+#intro
 {
-margin: 0rem 0rem 0.5rem 1rem;
+margin: 2rem 0rem 0.5rem 1rem;
 }
-.field
+#intro h1
 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    padding-right: 1.5rem;  
+}
+#field
+{
+    margin: 1rem 0rem 0.5rem 0rem;
 }
 .note
 {
@@ -514,81 +527,110 @@ margin: 0rem 0rem 0.5rem 1rem;
     height: auto;
     width: 22.6rem;
 }
-.flex-container
+.filter-flexbox
 {
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
 }
-.fa-child
-{
-    padding: 0.8rem 0.8rem 0.8rem 1rem;
-}
 /*location*/
-.location
+#location-section
 {
     display: flex;
     flex-direction:column-reverse;
-
+    margin-bottom: 2rem;
 }
-.popular
+
+.popular-article
 {
-    padding: 2rem 0rem 2rem 0rem;
+    padding: 2rem 0rem 1rem 0rem;
     border-radius: 0rem;
     margin: 0rem 0rem 2rem 0rem;
 }
-.rent
+.popular-article > .section-title
 {
+    margin: 0rem 1.5rem 2rem 1rem;
+}
+.popular-place
+{
+    height: 8.3rem;
+}
+.popular-box
+{
+    width: 20.5rem;
+    height: 8.3rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+.popular-photo
+{
+    height: 8.3rem;
+    width: 8rem;
+}
+.popular-text
+{
+    padding: 0.5rem 1.5rem 0.5rem 1rem ;
+}
+.popular-star
+{
+    line-height: 5rem;
+}
+
+
+.location-article
+{
+    width: 23.4rem;
+    display: flex;
+    flex-flow: column nowrap;
     padding: 0rem;
     background-color: white;
-    margin: 0rem 0rem 2rem 0rem;
+    margin: 0.5rem 0rem 2rem 0rem;
 }
-.text
+.location-box
 {
-    width: 19.5rem;
+    width: 20.5rem;
+    height: 12rem;
+    margin: 1rem 1rem 1rem 1rem;
 }
-.box
+.location-photo
 {
-    width: 20rem;
-    border-radius: 1rem;
-    box-shadow: 0.1rem 0.4rem #F2F2F2;
+    width: 20.6rem;
+    height: 7.05rem;
 }
-.flex-activities
+.location-text
+{
+    padding-left: 1rem;
+}
+
+#activities
+{
+    margin: 1rem 0rem 1.5rem 0rem;
+    height: auto;
+}
+.activities-flexbox
 {
     max-height: none;
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
+    height: auto;
 }
-.white-box
+.activities-box
 {
-    width: 21.8rem;
+    width: 20.5rem;
+    height: 12rem;
 }
-.large,.medium
+.activities-photo
+{
+    height: 8.5rem !important;
+    width: 20.5rem;
+    object-fit: cover;
+}
+.activities-box > a
 {
     height: 11rem;
-    background-position: 0rem 0rem;
-    background-size: cover;
 }
-.item-10
+footer
 {
-    background-position: -0rem -1.5rem;
-}
-.item-11
-{
-    background-position: 0rem -10rem;
-}
-.item-12,.item-13
-{
-    background-position: 0rem -1.5rem;
-}
-.item-15
-{
-    background-position: 0rem -2rem;
-}
-.box
-{
-    margin: 1.6rem 5.33rem 1.6rem 1.6rem;
-}
+    margin-top: 1rem;
 }
 @media (min-width:768px) and (max-width: 1023px)
 {
@@ -597,7 +639,7 @@ html
     width: 51.2rem;
     margin: 0rem;
 }
-header,.intro
+header,#intro
 {
     margin-left: 1rem;
 }
