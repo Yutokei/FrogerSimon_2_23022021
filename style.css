@@ -37,6 +37,10 @@ h3
     font-size: 1.1rem;
     margin: 0.2rem 0rem 0.2rem 0rem;
 }
+a
+{
+    text-decoration: none;
+}
 footer
 {
     line-height: 3rem;
@@ -147,28 +151,19 @@ footer
 }
 
 /*Filter*/
-.filter-section
+#filter-section
 {
     margin:0rem 0rem 1.66rem 0rem;
 }
-.filter-flexbox
+#filter-flexbox
 {
     display: flex;
     align-items: flex-start;
     flex-wrap: nowrap;
 }
-.filter-title
+#filter-title
 {
     margin: 1rem 2rem 1rem 0rem;
-}
-.filter-section a
-{
-    text-decoration: none;
-}
-.filter-section a:hover
-{
-    color: #0065FC;
-    
 }
 .filter-icones
 {
@@ -187,20 +182,16 @@ footer
 {
     padding: 0.8rem 0.8rem 0.8rem 1rem;
 }
-
 .filter-item h2
 {
     display: inline;
 }
-.filter-item h2:hover
+#filter-flexbox > a:hover,#filter-flexbox > a:active
 {
     color: white;
     background-color: #0065FC;
-    border: 0.6rem solid #0065FC;
-    border-radius: 2rem;
 }
-
-  .filter-item
+.filter-item
 {
     margin: 0.2rem 0.5rem 0.2rem 0.5rem;
     padding-right: 0.60rem;
@@ -220,7 +211,7 @@ footer
     border-radius: 2rem;
     position: absolute;
 }
-.note
+#note
 {
     position: relative;
     margin: 3rem 0rem 3rem 0rem;
@@ -228,7 +219,7 @@ footer
     width: auto;
 }
 /*section 2 Rent*/
-.location-article, .popular-article, footer
+#location-article, #popular-article, footer
 {
     background-color: #F2F2F2;
 }
@@ -264,14 +255,14 @@ footer
 }
 
 /*article location*/
-.location-article
+#location-article
 {
     width: 56rem;
     padding: 2.5rem 1rem 2.5rem 1rem;
     border-radius: 2rem;
     margin-right: auto;
 }
-.location-flexbox
+#location-flexbox
 {
     display: flex;
     flex-flow: row wrap;
@@ -302,10 +293,10 @@ footer
 }
 
 /*article popular*/
-.popular-article
+#popular-article
 {
     padding: 2rem 2rem 0rem 2rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
 }
 .popular-box
 {
@@ -324,6 +315,7 @@ footer
 {
     display: flex;
     flex-flow: row nowrap;
+    height: 9rem;
 }
 .popular-photo
 {
@@ -342,7 +334,7 @@ footer
 }
 
 /*article activities*/
-.activities-flexbox
+#activities-flexbox
 {
     height: 34rem;
     width: auto;
@@ -414,11 +406,10 @@ footer
 {
     margin: 3rem auto 3rem 3rem;
 }
-
 /*Media Queries*/
 @media (min-width:320px) and (max-width:767px)
-/*global*/
 {
+/*global*/
 html
 { 
     max-width:375px;
@@ -505,7 +496,7 @@ margin: 2rem 0rem 0.5rem 1rem;
 {
     margin: 1rem 0rem 0.5rem 0rem;
 }
-.note
+#note
 {
     margin: 2.5rem 0rem 1.6rem 0rem;
 }
@@ -518,20 +509,24 @@ margin: 2rem 0rem 0.5rem 1rem;
 {
     display: none;
 }
-.filter-title
+#filter-title
 {
     width: 24rem;
 }
-.filter-section
+#filter-section
 {
     height: auto;
     width: 22.6rem;
 }
-.filter-flexbox
+#filter-flexbox
 {
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
+}
+.filter-item
+{
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 /*location*/
 #location-section
@@ -541,13 +536,13 @@ margin: 2rem 0rem 0.5rem 1rem;
     margin-bottom: 2rem;
 }
 
-.popular-article
+#popular-article
 {
     padding: 2rem 0rem 1rem 0rem;
     border-radius: 0rem;
     margin: 0rem 0rem 2rem 0rem;
 }
-.popular-article > .section-title
+#popular-article > .section-title
 {
     margin: 0rem 1.5rem 2rem 1rem;
 }
@@ -576,7 +571,7 @@ margin: 2rem 0rem 0.5rem 1rem;
 }
 
 
-.location-article
+#location-article
 {
     width: 23.4rem;
     display: flex;
@@ -606,7 +601,7 @@ margin: 2rem 0rem 0.5rem 1rem;
     margin: 1rem 0rem 1.5rem 0rem;
     height: auto;
 }
-.activities-flexbox
+#activities-flexbox
 {
     max-height: none;
     display: flex;
@@ -632,6 +627,11 @@ footer
 {
     margin-top: 1rem;
 }
+.footer-box
+{
+    margin: 1rem auto 1rem 4rem;
+}
+}
 @media (min-width:768px) and (max-width: 1023px)
 {
 html
@@ -639,62 +639,92 @@ html
     width: 51.2rem;
     margin: 0rem;
 }
-header,#intro
+header
 {
     margin-left: 1rem;
 }
-.filter-section
+main
+{
+    margin: 0rem;
+}
+#intro
+{
+    margin-left: 5rem;
+}
+#search-flexbox
+{
+    display: flex;
+    flex-flow: row nowrap;
+}
+#field
+{
+    align-self: center;
+}
+#filter-section
 {
     height: auto;
 }
-.flex-container
-{
-
-    display: flex;
-    flex-wrap: wrap;
-}
-.location
+#filter-flexbox
 {
     display: flex;
-    flex-direction: column-reverse;
+    flex-flow: column wrap;
 }
-.popular
+#note
 {
-    max-width: 51.1rem;
-    height: auto;
-    margin: 0rem 0rem 1.5rem 0rem;
+    text-align: center;
+    margin: 1rem 0rem 1rem 0rem;
+    padding-left: 5rem;
 }
-.popular .flex-container
+.fa-info
+{
+    margin-left: 10rem;  
+}
+#location-section
+{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+}
+#popular-flexbox
 {
     width: auto;
     height: auto;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 }
-.rent
+.popular-box
 {
-    background-color: white;
-    margin-top: 1.5rem;
+    width: 21rem;
+    margin: auto;
 }
-.flex
+.popular-text
 {
-    margin: 1.33rem auto 0.5rem auto;
+    height: 8rem;
 }
-.flex-actities
+#location-article
 {
-    max-height: none;
+    background-color:white;
+}
+#location-flexbox
+{
+    width: 51.2rem;
+    height: auto;
+    justify-content: space-evenly;
+}
+#activities-flexbox
+{
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
 }
-.large,.medium,.small
+.activities-box
 {
-    margin: 1rem auto 1rem auto;
-    background-size: cover;
+    height: 12rem;
+    margin: 1rem 0rem 1rem 0rem;
 }
-.large,.small
+.activities-photo
 {
-    height: 15rem;
+    height: 9rem!important;
 }
 }
