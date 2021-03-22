@@ -278,7 +278,7 @@ footer
     margin: 1rem;
     box-shadow: 0 0.4rem 0.4rem 0 #F2F2F2, 0 0.66rem 1.33rem 0 #F2F2F2;
     transform: scale(1);
-    transition: transform 300ms ease-in-out;
+    transition: transform 400ms ease-in-out;
 }
 .location-photo
 {
@@ -309,7 +309,7 @@ footer
     margin: 2.1rem 0rem 2.1rem 0rem;
     box-shadow: 0 0.4rem 0.4rem 0 #F2F2F2, 0 0.66rem 1.33rem 0 #F2F2F2;
     transform: scale(1);
-    transition: transform 300ms ease-in-out;
+    transition: transform 400ms ease-in-out;
 }
 .popular-place
 {
@@ -349,7 +349,7 @@ footer
     border-radius: 1rem;
     box-shadow: 0 0.4rem 0.4rem 0 #F2F2F2, 0 0.66rem 1.33rem 0 #F2F2F2;
     transform: scale(1);
-    transition: transform 300ms ease-in-out;
+    transition: transform 400ms ease-in-out;
 }
 .activities-photo
 {
@@ -641,11 +641,16 @@ html
 }
 header
 {
-    margin-left: 1rem;
+    background-color: #F2F2F2
 }
 main
 {
     margin: 0rem;
+}
+.section-title
+{
+    text-align: center;
+    margin: 0rem 0rem 1rem 0rem;
 }
 #intro
 {
@@ -684,17 +689,23 @@ main
     display: flex;
     flex-flow: column-reverse nowrap;
 }
+
+#popular-article
+{
+    padding: 2rem;
+}
 #popular-flexbox
 {
     width: auto;
     height: auto;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 .popular-box
 {
     width: 21rem;
-    margin: auto;
+    margin: 1rem;
 }
 .popular-text
 {
@@ -703,6 +714,8 @@ main
 #location-article
 {
     background-color:white;
+    width: 51.2rem;
+    padding: 2rem 0rem 2rem 0rem;
 }
 #location-flexbox
 {
