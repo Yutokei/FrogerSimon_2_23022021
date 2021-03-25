@@ -37,9 +37,11 @@ h3
     font-size: 1.1rem;
     margin: 0.2rem 0rem 0.2rem 0rem;
 }
-a
+a,a:visited
 {
     text-decoration: none;
+    color: black;
+    display: block;
 }
 footer
 {
@@ -77,12 +79,6 @@ footer
     color: #0065FC;
     border: none;
 }
- a,a:visited
-{
-    text-decoration: none;
-    color: black;
-    display: block;
-}
 /*Section 1 search form*/
 #intro
 {
@@ -95,13 +91,13 @@ footer
     display: flex;
     margin: 0rem auto 0rem auto;
 }
-#local, #locate-icone, #search, #input, #altinput 
+#local, #locate-icon, #search, #input, #altinput 
 {
     height: 3.2rem;
     font-size: 1.2rem;
     
 }
-#locate-icone
+#locate-icon
 { 
     height: 2.6rem;
     width: 0.16rem;
@@ -165,7 +161,7 @@ footer
 {
     margin: 1rem 2rem 1rem 0rem;
 }
-.filter-icones
+.filter-icons
 {
     width: auto;
     height: 1rem;
@@ -216,7 +212,7 @@ footer
     border: 0.14rem solid #F2F2F2;
     border-radius: 2rem;
 }
-/*section 2 Rent*/
+/*section 2 rent*/
 #location-article, #popular-article, footer
 {
     background-color: #F2F2F2;
@@ -225,12 +221,12 @@ footer
 {
     transform: scale(1.15);
 }  
-.fa-star,.miss 
+.fa-star,.fa-star .miss
 {
     font-size: 0.8rem;
     color: #0065FC;
 }
-.miss
+.fa-star .miss
 {
     color: #F2F2F2;
 }
@@ -245,7 +241,7 @@ footer
     display: block;
     margin-left: 1rem;
 }
-#location-section
+#rent-section
 {
     line-height: 1.30rem;
     display: flex;
@@ -331,7 +327,7 @@ footer
     line-height: 7rem;
 }
 
-/*article activities*/
+/*section activités*/
 #activities-flexbox
 {
     height: 34rem;
@@ -360,35 +356,35 @@ footer
 {
     padding: 0.5rem 0rem 0rem 1rem;
 }
-.medium
+.medium-box
 {
     height: 13rem;
 }
-.large
+.large-box
 {
     height: 29.5rem;
 }
-.medium-large
+.medium-large-box
 {
     height: 15.6rem;
 }
-.small
+.small-box
 {
     height: 10.80rem;
 }
-.small > .activities-photo
+.small-box > .activities-photo
 {
     height: 7.2rem;
 }
-.medium > .activities-photo
+.medium-box > .activities-photo
 {
     height: 9.1rem;
 }
-.medium-large > .activities-photo
+.medium-large-box > .activities-photo
 {
     height: 12rem;
 }
-.large  > .activities-photo
+.large-box > .activities-photo
 {
     height: 26rem;
 }
@@ -404,8 +400,8 @@ footer
 {
     margin: 3rem auto 3rem 3rem;
 }
-/*Media Queries*/
-@media (min-width:320px) and (max-width:767px)
+/*Media queries*/
+@media (max-width:767px)
 {
 /*global*/
 html
@@ -522,7 +518,7 @@ margin: 2rem 0rem 0.5rem 1rem;
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 /*location*/
-#location-section
+#rent-section
 {
     display: flex;
     flex-direction:column-reverse;
@@ -676,7 +672,7 @@ main
 {
     margin-left: 10rem;  
 }
-#location-section
+#rent-section
 {
     display: flex;
     flex-flow: column-reverse nowrap;
