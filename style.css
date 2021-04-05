@@ -217,7 +217,7 @@ footer
 {
     background-color: #F2F2F2;
 }
-.location-box:hover,.popular-box:hover,.activities-box:hover
+.location-box:hover,.popular-place:hover,.activities-box:hover
 {
     transform: scale(1.15);
 }  
@@ -292,7 +292,7 @@ footer
     padding: 2rem 2rem 0rem 2rem;
     border-radius: 2rem;
 }
-.popular-box
+.popular-place
 {
     width: 22.2rem;
     height: 8.9rem;
@@ -305,9 +305,10 @@ footer
     transform: scale(1);
     transition: transform 400ms ease-in-out;
 }
-.popular-place
+.popular-box
 {
     display: flex;
+    margin: 0rem;
     flex-flow: row nowrap;
     height: 9rem;
 }
@@ -355,6 +356,10 @@ footer
 .activities-text
 {
     padding: 0.5rem 0rem 0rem 1rem;
+}
+.medium-box,.large-box,.medium-large-box,.small-box
+{
+    margin: 0rem;
 }
 .medium-box
 {
@@ -535,11 +540,11 @@ margin: 2rem 0rem 0.5rem 1rem;
 {
     margin: 0rem 1.5rem 2rem 1rem;
 }
-.popular-place
+.popular-box
 {
     height: 8.3rem;
 }
-.popular-box
+.popular-place
 {
     width: 20.5rem;
     height: 8.3rem;
@@ -690,7 +695,7 @@ main
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
-.popular-box
+.popular-place
 {
     width: 21rem;
     margin: 1rem;
